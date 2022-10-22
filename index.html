@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Identificador de Sons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <style>
+    .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+    }
+    </style>
+    <div class="col-xs-12 header_div text-center">
+        <h2 id="ttl"> Faça os seguintes sons para movimentar os alienígenas </h2>
+        <hr>
+        <h3>Ruído de fundo</h3>
+        <hr>
+        <h3>Palmas</h3>
+        <hr>
+        <h3>Estralo de dedo</h3>
+        <hr>
+        <h3>Sons de boca</h3>
+        <hr>
+    </div>
+    <div class="main_div">
+        <div id="header"></div>
+        <center>
+            <br>
+            <button onclick="ouvir()" id="identificar"> <span class="material-symbols-outlined">interpreter_mode</span> </button>
+            <br>
+            <br>
+            <label>Barulho:  </label> <span><label id="barulho"> </label> </span>
+            <br>
+            <label>Precisão:  </label> <span><label id="pct"> </label> </span>
+            <br>
+            <img id="alienUm" src="aliens-01.png" width="300px" height="300px">
+            <img id="alienDois" src="aliens-02.png" width="300px" height="300px">
+            <img id="alienTres" src="aliens-03.png" width="300px" height="300px">
+            <img id="alienQuatro" src="aliens-04.png" width="300px" height="300px">
+            <h5 id="rodape">Feito por Ana Clara</h5>
+        </center>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
